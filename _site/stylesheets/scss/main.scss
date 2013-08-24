@@ -1,0 +1,150 @@
+/* Variables */
+
+$verylightgrey: darken(white, 10%);
+$lightgrey: darken(white, 25%);
+$medgrey: darken(white, 50%);
+$tan: lighten(#d2b48c, 28%);
+
+/* Global */
+
+* {
+  @include box-sizing(border-box);
+  position: relative;
+
+  transition: width 0.1s, height 0.1s, opacity, 0.1s, margin 0.1s, padding 0.1s, background 0.1s;
+  -moz-transition: width 0.1s, height 0.1s, opacity, 0.1s, margin 0.1s, padding 0.1s, background 0.1s;
+  -webkit-transition: width 0.1s, height 0.1s, opacity, 0.1s, margin 0.1s, padding 0.1s, background 0.1s;
+  -o-transition: width 0.1s, height 0.1s, opacity, 0.1s, margin 0.1s, padding 0.1s, background 0.1s;
+}
+
+/* Basics */
+
+html {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  display: block;
+  padding: 70px 0; /* needed for fix height header */
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+}
+
+.header {
+  margin: 20px;
+  img {
+    z-index: 1000;
+  }
+}
+
+.footer {
+  border-top: 1px solid $verylightgrey;
+  padding: 1em;
+  margin-top: 1em;
+
+  p {
+    color: $lightgrey;
+  }
+}
+
+.container {
+  &.headline {
+    box-shadow: 5px 5px 20px $lightgrey;
+  }
+  img {
+    z-index: 1000;
+  }
+}
+
+.headline {
+  img {
+    margin: 15px 15px 0px 0px;
+  }
+}
+
+.navbar-header {
+  .active {
+    h3 {
+      margin: 0px 20px 0px 20px;
+      color: $lightgrey;
+
+      a {
+        color: $lightgrey;
+      }
+      a:hover {
+        color: $tan;
+      }
+    }
+  }
+}
+
+.navbar-fixed-top {
+  ul.navbar-nav {
+    padding: 0px;
+  }
+}
+
+blockquote {
+  background-color: lighten($verylightgrey, 5%);
+}
+
+.categories {
+  width: 90%;
+  h5 {
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: $lightgrey;
+  }
+
+  ol {
+    label {
+      width: 6em;
+      text-align: right;
+    }
+  }
+
+  .legend {
+    float: right;
+    border: 1px solid $verylightgrey;
+  }
+}
+
+.well {
+  background-color: $tan;
+  border: 1px solid darken($tan, 5%);
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px $verylightgrey;
+}
+
+/* see https://gist.github.com/pinchyfingers/2414459 */
+.outline {
+  padding: 15px;
+  margin: 0px;
+
+  background-color: $tan;
+  border: 1px solid darken($tan, 5%);
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px $verylightgrey;
+
+  ol {
+    padding: 0px 0px 10px 19px;
+
+    ol {
+      padding: 0px 0px 5px 20px;
+    }
+  }
+}
+
+.article {
+  margin: 20px;
+}
