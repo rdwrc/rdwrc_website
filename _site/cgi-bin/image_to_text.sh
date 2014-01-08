@@ -12,13 +12,13 @@ fi
 filename=$1
 basename="${filename%.[^.]*}"
 tmp_file_name="output`date +%s`"
-output_folder='/tmp'
+output_folder="$HOME/tmp"
 
-export TESSDATA_PREFIX=/home1/ralphdwi/tesseract-ocr
+export TESSDATA_PREFIX=$HOME/local/share/
 
-#dbg PDF_FOLDER=$HOME/public_html/dev/originals
-#dbg filename="$PDF_FOLDER/Oregon newspaper reviews.pdf"
+#dbg filename="$HOME/public_html/dev/originals/Oregon newspaper reviews.pdf"
 
+echo "Creating image named '$tmp_file_name.png'"
 convert -density 300 "$filename" -depth 8 $tmp_file_name.png
 
 count=1

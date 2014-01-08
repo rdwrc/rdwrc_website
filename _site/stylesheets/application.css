@@ -38,6 +38,8 @@ ul, ol {
   margin: 20px; }
   .header img {
     z-index: 1000; }
+    .header img.img-margin {
+      padding: 10px; }
 
 .footer {
   border-top: 1px solid #e6e6e6;
@@ -77,6 +79,9 @@ blockquote {
     color: #bfbfbf; }
   .categories ol label {
     width: 6em;
+    text-align: right; }
+  .categories ol .enumeration {
+    color: #bfbfbf;
     text-align: right; }
   .categories .legend {
     float: right;

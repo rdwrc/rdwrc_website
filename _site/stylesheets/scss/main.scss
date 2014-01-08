@@ -43,6 +43,9 @@ ul, ol {
   margin: 20px;
   img {
     z-index: 1000;
+    &.img-margin {
+      padding: 10px;
+    }
   }
 }
 
@@ -109,6 +112,10 @@ blockquote {
   ol {
     label {
       width: 6em;
+      text-align: right;
+    }
+    .enumeration {
+      color: $lightgrey;
       text-align: right;
     }
   }
