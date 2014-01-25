@@ -46,6 +46,10 @@ ul, ol {
     &.img-margin {
       padding: 10px;
     }
+    &.img-side-margin {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -77,7 +81,7 @@ ul, ol {
 .navbar-header {
   .active {
     h3 {
-      margin: 0px 20px 0px 20px;
+      margin: 0px 20px 0px 0px;
       color: $lightgrey;
 
       a {
@@ -87,6 +91,21 @@ ul, ol {
         color: $tan;
       }
     }
+
+    img {
+      margin: 0px 5px 0px 0px;
+    }
+  }
+}
+
+.page-location {
+  img, h3 {
+    float: left;
+    clear: none;
+  }
+  h3 {
+    margin: 10px 10px;
+    color: $lightgrey;
   }
 }
 

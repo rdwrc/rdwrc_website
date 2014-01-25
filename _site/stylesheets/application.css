@@ -40,6 +40,9 @@ ul, ol {
     z-index: 1000; }
     .header img.img-margin {
       padding: 10px; }
+    .header img.img-side-margin {
+      margin-left: 10px;
+      margin-right: 10px; }
 
 .footer {
   border-top: 1px solid #e6e6e6;
@@ -57,12 +60,21 @@ ul, ol {
   margin: 15px 15px 0px 0px; }
 
 .navbar-header .active h3 {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 0px;
   color: #bfbfbf; }
   .navbar-header .active h3 a {
     color: #bfbfbf; }
   .navbar-header .active h3 a:hover {
     color: #faf7f3; }
+.navbar-header .active img {
+  margin: 0px 5px 0px 0px; }
+
+.page-location img, .page-location h3 {
+  float: left;
+  clear: none; }
+.page-location h3 {
+  margin: 10px 10px;
+  color: #bfbfbf; }
 
 .navbar-fixed-top ul.navbar-nav {
   padding: 0px; }
