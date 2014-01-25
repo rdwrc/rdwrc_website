@@ -33,6 +33,23 @@ ul, ol {
   list-style-type: none;
   margin: 0px;
   padding: 10px; }
+  ul li.calendar, ol li.calendar {
+    margin-bottom: 10px; }
+  ul li .date, ol li .date {
+    background-image: url("/images/calendar.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 25px; }
+  ul li .title, ul li .speaker, ul li .sponsor, ul li .video, ol li .title, ol li .speaker, ol li .sponsor, ol li .video {
+    padding-left: 30px; }
+  ul li .video, ol li .video {
+    background-image: url("/images/video.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 25px;
+    margin-left: 30px; }
 
 .header {
   margin: 20px; }
