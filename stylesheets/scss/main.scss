@@ -103,26 +103,6 @@ ul, ol {
   }
 }
 
-.navbar-header {
-  .active {
-    h3 {
-      margin: 0px 20px 0px 0px;
-      color: $lightgrey;
-
-      a {
-        color: $lightgrey;
-      }
-      a:hover {
-        color: $tan;
-      }
-    }
-
-    img {
-      margin: 0px 5px 0px 0px;
-    }
-  }
-}
-
 .page-location {
   img, h3 {
     float: left;
@@ -135,8 +115,26 @@ ul, ol {
 }
 
 .navbar-fixed-top {
-  ul.navbar-nav {
+  ul.nav-pills {
+    float: left;
+    clear: none;
     padding: 0px;
+    margin: 5px;
+
+    a {
+      color: $lightgrey;
+    }
+    a:hover {
+      color: white;
+      background: #428bca;
+    }
+    .active {
+      a {
+        color: white;
+        background: lighten(black, 25%);
+        font-weight: bold;
+      }
+    }
   }
 }
 
