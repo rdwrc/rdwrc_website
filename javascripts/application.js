@@ -16,6 +16,18 @@ $(function () {
     anchor = $('ul.navbar-nav li').has('a[href="'+(getURLPath()+'.html')+'"]');
     $(anchor).addClass('active');
   }
+  else if (getURLPath().match(/index/)) {
+    $('#index_nav_link').addClass('active');
+  }
+  else if (getURLPath().match(/calendar/)) {
+    $('#calendar_nav_link').addClass('active');
+  }
+  else if (getURLPath().match(/past_events/)) {
+    $('#past_events_nav_link').addClass('active');
+  }
+  else if (getURLPath().match(/contact/)) {
+    $('#contact_nav_link').addClass('active');
+  }
 });
 
 /* see http://www.texodigital.com/blog/JavaScript/javascript-url-parameters
