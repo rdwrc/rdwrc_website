@@ -9,12 +9,32 @@ if [ $# != 1 ]; then
   exit 1
 fi
 
-filename=$1
-basename="${filename%.[^.]*}"
-tmp_file_name="output`date +%s`"
-output_folder="$HOME/tmp"
+if [ -d $HOME/local/share/tessdata ]
+then
+  export TESSDATA_PREFIX=$HOME/local/share/
+elif [ -d /usr/local/share/tessdata ]
+then
+  export TESSDATA_PREFIX=/usr/local/share/
+else
+  echo "$0: no tesseract data exists"
+  exit 2
+fi
 
-export TESSDATA_PREFIX=$HOME/local/share/
+if [ -d $HOME/tmp ]
+then
+  output_folder="$HOME/tmp"
+elif [ -d /tmp ]
+then
+  output_folder="/tmp"
+else
+  echo "$0: no tmp directory exists"
+  exit 3
+fi
+
+filename=$1
+base_filename="${filename%.[^.]*}"
+basename=`basename $base_filename`
+tmp_file_name="$output_folder/output`date +%s`"
 
 #dbg filename="$HOME/public_html/dev/originals/Oregon newspaper reviews.pdf"
 
@@ -30,7 +50,7 @@ do
   count=`expr $count + 1`
 done
 rm $tmp_file_name*.png
-cat "$output_folder/$basename"*.txt > "$basename".txt
+cat "$output_folder/$baseame"*.txt > "$base_filename".txt
 rm "$output_folder/$basename"*.txt
 
-echo "CREATED '$basename.txt"
+echo "CREATED $base_filename.txt"
