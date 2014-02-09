@@ -61,15 +61,15 @@ ul, ol {
 
 .header {
   margin: 20px;
-  img {
-    z-index: 1000;
-    &.img-margin {
-      padding: 10px;
-    }
-    &.img-side-margin {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+}
+img {
+  z-index: 1000;
+  &.img-margin {
+    padding: 10px;
+  }
+  &.img-side-margin {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

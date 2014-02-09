@@ -47,13 +47,14 @@ ul, ol {
 
 .header {
   margin: 20px; }
-  .header img {
-    z-index: 1000; }
-    .header img.img-margin {
-      padding: 10px; }
-    .header img.img-side-margin {
-      margin-left: 10px;
-      margin-right: 10px; }
+
+img {
+  z-index: 1000; }
+  img.img-margin {
+    padding: 10px; }
+  img.img-side-margin {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 .footer {
   border-top: 1px solid #e6e6e6;
