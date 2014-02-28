@@ -65,7 +65,7 @@ ul, ol {
 img {
   z-index: 1000;
   &.img-margin {
-    padding: 10px;
+    margin: 10px;
   }
   &.img-side-margin {
     margin-left: 10px;
@@ -191,4 +191,14 @@ blockquote {
 
 .article {
   margin: 20px;
+}
+
+.sub-bullet {
+  text-indent: 20px;
+  padding-left: 20px;
+}
+
+.google-custom-search-box {
+  position: absolute;
+  top: -1000px;
 }
