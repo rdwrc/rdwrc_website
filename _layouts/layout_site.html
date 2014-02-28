@@ -23,16 +23,7 @@
         <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
         <h3>{{ page.title }}</h3>
       </div>
-      <form class="navbar-form" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="search {{ page.title }} archives">
-          <span class="input-group-btn">
-            <button type="submit" class="btn btn-default">
-              <i class="icon-search"></i>
-            </button>
-          </span>
-        </div>
-      </form>
+      {% include search.html %}
     </div>
 
     <div class="content">
