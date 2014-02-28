@@ -23,16 +23,36 @@
         <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
         <h3>The Ralph D. Winter Archives</h3>
       </div>
-      <form class="navbar-form" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="search The Ralph D. Winter Archives archives">
-          <span class="input-group-btn">
-            <button type="submit" class="btn btn-default">
-              <i class="icon-search"></i>
-            </button>
+          <form class="navbar-form" role="search">
+      <div class="input-group">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="search_text_changed(); show_search_results();">
+            <i class="icon-search"></i>
           </span>
-        </div>
-      </form>
+        </span>
+        <input type="text" class="form-control" placeholder="search all archives">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="clear_search_text()">
+            <i class="icon-remove"></i>
+          </span>
+        </span>
+      </div>
+    </form>
+    <div class="google-custom-search-box">
+      <script>
+        (function() {
+          var cx = '017719576301278948167:bmktl2iol5o';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search gname="rdwrc_search"></gcse:search>
+    </div>
+
     </div>
 
     <div class="content">
