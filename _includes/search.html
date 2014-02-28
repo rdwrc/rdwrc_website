@@ -1,0 +1,29 @@
+    <form class="navbar-form" role="search">
+      <div class="input-group">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="search_text_changed(); show_search_results();">
+            <i class="icon-search"></i>
+          </span>
+        </span>
+        <input type="text" class="form-control" placeholder="search all archives">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="clear_search_text()">
+            <i class="icon-remove"></i>
+          </span>
+        </span>
+      </div>
+    </form>
+    <div class="google-custom-search-box">
+      <script>
+        (function() {
+          var cx = '017719576301278948167:bmktl2iol5o';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search gname="rdwrc_search"></gcse:search>
+    </div>
