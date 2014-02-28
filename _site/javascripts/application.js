@@ -28,6 +28,12 @@ $(function () {
   else if (getURLPath().match(/contact/)) {
     $('#contact_nav_link').addClass('active');
   }
+
+  $('.navbar-form').submit(function(e) {
+    e.preventDefault();
+    show_search_results();
+    return false;
+  });
 });
 
 /* see http://www.texodigital.com/blog/JavaScript/javascript-url-parameters
@@ -72,4 +78,24 @@ function login(event) {
     window.location = 'index.html';
   }
   return falss;
+}
+
+// Load scripts asynchronously
+//  NOTE: Don't use $.getScript since it disables caching
+function loadJavascriptAsync(url, callback) {
+  $.getScript((document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + url, callback);
+}
+
+/*
+  see https://developers.google.com/custom-search/
+  see https://developers.google.com/custom-search/docs/element
+  see https://developers.google.com/custom-search/docs/js/cselement-reference
+  see https://www.google.com/cse/create/getcode?cx=017719576301278948167%3Abmktl2iol5o
+*/
+
+function show_search_results() {
+  var queryStr = $('.navbar-form .form-control').first().val();
+  if (queryStr.length > 0) {
+    google.search.cse.element.getElement('rdwrc_search').execute(queryStr);
+  }
 }
