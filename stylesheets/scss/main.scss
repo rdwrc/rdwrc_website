@@ -38,6 +38,18 @@ ul, ol {
   margin: 0px;
   padding: 10px;
 
+  &.photos {
+    clear: both;
+    li {
+      clear: both;
+      float: left;
+      img {
+        margin: 0px 10px 10px 0px;
+        border: 0px;
+      }
+    }
+  }
+
   li {
     &.calendar {
       margin-bottom: 10px;

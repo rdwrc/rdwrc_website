@@ -33,6 +33,14 @@ ul, ol {
   list-style-type: none;
   margin: 0px;
   padding: 10px; }
+  ul.photos, ol.photos {
+    clear: both; }
+    ul.photos li, ol.photos li {
+      clear: both;
+      float: left; }
+      ul.photos li img, ol.photos li img {
+        margin: 0px 10px 10px 0px;
+        border: 0px; }
   ul li.calendar, ol li.calendar {
     margin-bottom: 10px; }
   ul li .date, ol li .date {
