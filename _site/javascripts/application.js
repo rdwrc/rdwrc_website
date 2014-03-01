@@ -16,7 +16,7 @@ $(function () {
     anchor = $('ul.navbar-nav li').has('a[href="'+(getURLPath()+'.html')+'"]');
     $(anchor).addClass('active');
   }
-  else if (getURLPath().match(/index/)) {
+  else if (getURLPath().match(/index/) || getURLPath() == '') {
     $('#index_nav_link').addClass('active');
   }
   else if (getURLPath().match(/calendar/)) {
