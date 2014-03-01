@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>{{ page.title }}</title>
+    <title>The Ralph D. Winter Research Center</title>
 
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/application.css" media="screen">
 
@@ -21,8 +21,13 @@
     {% include navigation.html %}
 
     <main role="main">
+      {% if page.parent %}
+        <ol class="breadcrumb">
+          <li><a href="{{ page.parent }}.html">{{ page.title }}</a></li>
+          <li class="active">{{ page.subtitle }}</li>
+        </ol>
+      {% endif %}
       <div class="container">
-        <h1 class="title">{{ page.title }}</h1>
         <div class="content article">
           <div class="row">
             <div class="span12">

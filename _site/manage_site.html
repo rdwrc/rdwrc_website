@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>RDWRC Admin</title>
+    <title>RDWRC Admin Manage Site</title>
 
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/application.css" media="screen">
 
@@ -23,24 +23,29 @@
         <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="admin.html"><i class="icon-home"></i> Home</a></li>
-        <li><a href="manage_users.html"><i class="icon-user"></i> Users</a></li>
-        <li><a href="manage_content.html"><i class="icon-file"></i> Content</a></li>
-        <li><a href="manage_site.html"><i class="icon-sitemap"></i> Site</a></li>
+        <li class="active"><a href="admin.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="manage_users.html"><i class="fa fa-user"></i> Users</a></li>
+        <li><a href="manage_content.html"><i class="fa fa-file"></i> Content</a></li>
+        <li><a href="manage_site.html"><i class="fa fa-sitemap"></i> Site</a></li>
       </ul>
     </div>
 
     <div class="content">
-      <div class="large">
-  <div class="container headline">
-    <h1>Admin page : <a href="index.html">The Ralph D. Winter Research Center</a></h1>
+      <ol class="breadcrumb">
+  <li><a href="index.html">The Ralph D. Winter Research Center</a></li>
+  <li><a href="admin.html">Admin</a></li>
+  <li class="active">Manage Site</li>
+</ol>
+
+<div class="large">
+  <div class="container">
     <p>
       From this administrator page you will be able to:
     </p>
     <ul>
-      <li>Manage <a href="manage_users.html">users</a> of the site</li>
-      <li>Manage document processing <a href="manage_content.html">content</a></li>
-      <li>Perform other <a href="manage_site.html">site</a> maintenance tasks</li>
+      <li><i class="fa fa-user"></i> Manage <a href="manage_users.html">users</a> of the site</li>
+      <li><i class="fa fa-file"></i> Manage document processing <a href="manage_content.html">content</a></li>
+      <li><i class="fa fa-sitemap"></i> Perform other <a href="manage_site.html">site</a> maintenance tasks</li>
     </ul>
   </div>
 </div>
