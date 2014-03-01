@@ -26,33 +26,41 @@
       {% include search.html %}
     </div>
 
-    <div class="content article">
-      {% if page.title == 'The Highest Priority - Cross-Cultural Evangelism' %}
-        <img class="img-rounded pull-right img-responsive" src="Lausanne_1974/Lausanne_1974_wordle_medium.png" alt="Lausanne 1974 top words"/>
-      {% endif %}
+    <main role="main">
+      <div class="container">
+        <div class="content article">
+          <div class="row">
+            <div class="span12">
+              {% if page.title == 'The Highest Priority - Cross-Cultural Evangelism' %}
+                <img class="img-rounded pull-right img-responsive" src="Lausanne_1974/Lausanne_1974_wordle_medium.png" alt="Lausanne 1974 top words"/>
+              {% endif %}
 
-      {% if page.title %}
-        <h2>{{ page.title }}</h2>
-      {% endif %}
+              {% if page.title %}
+                <h2>{{ page.title }}</h2>
+              {% endif %}
 
-      {% if page.date or page.event %}
-        <h4> {{ page.date }} {{ page.event }} </h4>
-      {% endif %}
+              {% if page.date or page.event %}
+                <h4> {{ page.date }} {{ page.event }} </h4>
+              {% endif %}
 
-      {% if page.location %}
-        <h5>{{ page.location }}</h5>
-      {% endif %}
+              {% if page.location %}
+                <h5>{{ page.location }}</h5>
+              {% endif %}
 
-      {% if page.author %}
-        <h5>{{ page.author }}</h5>
-      {% endif %}
+              {% if page.author %}
+                <h5>{{ page.author }}</h5>
+              {% endif %}
 
-      {% if page.original %}
-        <p><a href="{{ page.original }}">Original Article</a></p>
-      {% endif %}
+              {% if page.original %}
+                <p><a href="{{ page.original }}">Original Article</a></p>
+              {% endif %}
 
-      {{ page.content }}
-    </div>
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="footer">
       <p class="pull-right">&copy; 2014 The Ralph D. Winter Research Center </p>

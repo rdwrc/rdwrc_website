@@ -26,9 +26,17 @@
       {% include search.html %}
     </div>
 
-    <div class="content">
-      {{ page.content }}
-    </div>
+    <main role="main">
+      <div class="container">
+        <div class="content article">
+          <div class="row">
+            <div class="span12">
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="footer">
       <p class="pull-right">&copy; 2014 The Ralph D. Winter Research Center </p>
