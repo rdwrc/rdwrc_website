@@ -19,11 +19,16 @@
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="page-location">
-        <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
-        <h3>The Ralph D. Winter Archives</h3>
-      </div>
-          <form class="navbar-form" role="search">
+  <div class="nav navbar-nav navbar-left">
+    <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
+  </div>
+  <ul class="nav nav-pills">
+    <li id="index_nav_link"><a href="index.html">Home</a></li>
+    <li id="calendar_nav_link"><a href="rdwrc_calendar.html">Calendar</a></li>
+    <li id="past_events_nav_link"><a href="rdwrc_past_events.html">Past Events</a></li>
+    <li id="contact_nav_link"><a href="rdwrc_contact.html">Contact</a></li>
+  </ul>
+      <form class="navbar-form navbar-right" role="search">
       <div class="input-group">
         <span class="input-group-btn">
           <span class="btn btn-default" onclick="search_text_changed(); show_search_results();">
@@ -53,10 +58,12 @@
       <gcse:search gname="rdwrc_search"></gcse:search>
     </div>
 
-    </div>
+</div>
+
 
     <main role="main">
       <div class="container">
+        <h1 class="title">The Ralph D. Winter Archives</h1>
         <div class="content article">
           <div class="row">
             <div class="span12">

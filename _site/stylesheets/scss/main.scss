@@ -2,7 +2,7 @@
 
 $verylightgrey: darken(white, 10%);
 $lightgrey: darken(white, 25%);
-$medgrey: darken(white, 50%);
+$mediumgrey: darken(white, 50%);
 $tan: lighten(#d2b48c, 28%);
 
 /* Global */
@@ -84,6 +84,9 @@ img {
 }
 
 .container {
+  .title {
+    color: $mediumgrey;
+  }
   &.headline {
     box-shadow: 5px 5px 20px $lightgrey;
   }
@@ -125,11 +128,15 @@ img {
     }
     .active {
       a {
+        text-transform: uppercase;
         color: white;
         background: lighten(black, 25%);
         font-weight: bold;
       }
     }
+  }
+  form.navbar-right {
+    width: 50%;
   }
 }
 

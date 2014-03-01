@@ -63,6 +63,8 @@ img {
   .footer p {
     color: #bfbfbf; }
 
+.container .title {
+  color: gray; }
 .container.headline {
   box-shadow: 5px 5px 20px #bfbfbf; }
 .container img {
@@ -89,9 +91,12 @@ img {
     color: white;
     background: #428bca; }
   .navbar-fixed-top ul.nav-pills .active a {
+    text-transform: uppercase;
     color: white;
     background: #404040;
     font-weight: bold; }
+.navbar-fixed-top form.navbar-right {
+  width: 50%; }
 
 blockquote {
   background-color: #f2f2f2; }
