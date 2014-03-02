@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>The Ralph D. Winter Research Center</title>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/application.css" media="screen">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="javascripts/application.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="nav navbar-nav navbar-left">
+    <a href="index.html"><img src="images/rdwrc_logo_tiny.jpg" alt="Home"></a>
+  </div>
+  <ul class="nav nav-pills">
+    <li id="index_nav_link"><a href="index.html">Home</a></li>
+    <li id="calendar_nav_link"><a href="rdwrc_calendar.html">Calendar</a></li>
+    <li id="past_events_nav_link"><a href="rdwrc_past_events.html">Past Events</a></li>
+    <li id="contact_nav_link"><a href="rdwrc_contact.html">Contact</a></li>
+  </ul>
+      <form class="navbar-form navbar-right" role="search">
+      <div class="input-group">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="search_text_changed(); show_search_results();">
+            <i class="fa fa-search"></i>
+          </span>
+        </span>
+        <input type="text" class="form-control" placeholder="search all archives">
+        <span class="input-group-btn">
+          <span class="btn btn-default" onclick="clear_search_text()">
+            <i class="fa fa-times"></i>
+          </span>
+        </span>
+      </div>
+    </form>
+    <div class="google-custom-search-box">
+      <script>
+        (function() {
+          var cx = '017719576301278948167:bmktl2iol5o';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search gname="rdwrc_search"></gcse:search>
+    </div>
+
+</div>
+
+
+    <main role="main">
+      
+        <ol class="breadcrumb">
+          <li><a href="rdwrc_winter.html">The Ralph D. Winter Archives</a></li>
+          <li class="active">Audio presentations</li>
+        </ol>
+      
+      <div class="container">
+        <div class="content article">
+          <div class="row">
+            <div class="span12">
+              <div class="row">
+  <div class="col-md-10">
+    <div class="header">
+      <h4>Audio presentations on or by Ralph D. Winter:</h4>
+
+      <ol class="audios">
+        <li><i class="fa fa-music fa-lg"></i> <a href="audio/Lausanne_1974.m4a">(137 MB) The Highest Priority - Cross-Cultural Evangelism</a></li>
+        <li><i class="fa fa-music fa-lg"></i> <a href="audio/1998 0115 Winter Largest Stumbling Block.mp3">(63 MB) 1998 Winter Largest Stumbling Block</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p class="pull-right">&copy; 2014 The Ralph D. Winter Research Center </p>
+    </div>
+  </body>
+</html>
