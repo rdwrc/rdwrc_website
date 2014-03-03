@@ -52,6 +52,14 @@ ul, ol {
     padding-left: 30px; }
   ul li .video i, ol li .video i {
     padding-right: 5px; }
+  ul li .list-date, ol li .list-date {
+    color: lightgray;
+    font-size: 14px;
+    font-weight: normal; }
+  ul li .list-pdf, ol li .list-pdf {
+    color: red;
+    font-size: 14px;
+    font-weight: normal; }
 
 .header {
   margin: 20px; }
