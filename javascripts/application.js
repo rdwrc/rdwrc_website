@@ -99,3 +99,7 @@ function show_search_results() {
     google.search.cse.element.getElement('rdwrc_search').execute(queryStr);
   }
 }
+
+function clear_search_text() {
+  $('.navbar-form .form-control').first().val('');
+}
