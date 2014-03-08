@@ -3,6 +3,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Media Queries:
+  see http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+  see http://code-tricks.com/css-media-queries-for-common-devices/
+  see http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml
+  see http://stephen.io/mediaqueries/
+ */
 /* Variables */
 /* Global */
 * {
@@ -89,18 +95,19 @@ img {
 .headline img {
   margin: 15px 15px 0px 0px; }
 
-.page-location img, .page-location h3 {
-  float: left;
-  clear: none; }
-.page-location h3 {
-  margin: 10px 10px;
-  color: #bfbfbf; }
-
 .navbar-fixed-top ul.nav-pills {
   float: left;
   clear: none;
-  padding: 0px;
-  margin: 5px; }
+  /* iPhone 5 in portrait & landscape */
+  /* All Smartphones in portrait and landscape ----------- */
+  margin: 5px;
+  padding: 0px; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .navbar-fixed-top ul.nav-pills {
+      clear: right; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .navbar-fixed-top ul.nav-pills {
+      clear: right; } }
   .navbar-fixed-top ul.nav-pills a {
     color: #bfbfbf; }
   .navbar-fixed-top ul.nav-pills a:hover {
@@ -111,8 +118,24 @@ img {
     color: white;
     background: #404040;
     font-weight: bold; }
+  .navbar-fixed-top ul.nav-pills .logo {
+    margin: 0px;
+    padding: 0px; }
+    .navbar-fixed-top ul.nav-pills .logo a {
+      margin: 0px;
+      padding: 0px; }
 .navbar-fixed-top form.navbar-right {
-  width: 50%; }
+  width: 50%;
+  /* iPhone 5 in portrait & landscape */
+  /* All Smartphones in portrait and landscape ----------- */ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .navbar-fixed-top form.navbar-right {
+      margin: 0 5%;
+      width: 90%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .navbar-fixed-top form.navbar-right {
+      margin: 0 5%;
+      width: 90%; } }
 
 blockquote {
   background-color: #f2f2f2; }

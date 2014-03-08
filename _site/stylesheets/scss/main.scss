@@ -1,3 +1,10 @@
+/* Media Queries:
+  see http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+  see http://code-tricks.com/css-media-queries-for-common-devices/
+  see http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml
+  see http://stephen.io/mediaqueries/
+ */
+
 /* Variables */
 
 $verylightgrey: darken(white, 10%);
@@ -125,23 +132,27 @@ img {
   }
 }
 
-.page-location {
-  img, h3 {
-    float: left;
-    clear: none;
-  }
-  h3 {
-    margin: 10px 10px;
-    color: $lightgrey;
-  }
-}
-
 .navbar-fixed-top {
   ul.nav-pills {
     float: left;
     clear: none;
-    padding: 0px;
+
+    /* iPhone 5 in portrait & landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px) {
+      clear: right;
+    }
+
+    /* All Smartphones in portrait and landscape ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      clear: right;
+    }
+
     margin: 5px;
+    padding: 0px;
 
     a {
       color: $lightgrey;
@@ -158,9 +169,34 @@ img {
         font-weight: bold;
       }
     }
+
+    .logo {
+      margin: 0px;
+      padding: 0px;
+      a {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
   }
   form.navbar-right {
     width: 50%;
+
+    /* iPhone 5 in portrait & landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px) {
+      margin: 0 5%;
+      width: 90%;
+    }
+
+    /* All Smartphones in portrait and landscape ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      margin: 0 5%;
+      width: 90%;
+    }
   }
 }
 
