@@ -1,7 +1,5 @@
 /* Media Queries:
-  see http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-  see http://code-tricks.com/css-media-queries-for-common-devices/
-  see http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml
+  see http://scotch.io/quick-tips/default-sizes-for-twitter-bootstraps-media-queries
   see http://stephen.io/mediaqueries/
  */
 
@@ -135,19 +133,29 @@ img {
 .navbar-fixed-top {
   ul.nav-pills {
     float: left;
-    clear: none;
 
-    /* iPhone 5 in portrait & landscape */
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 568px) {
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
       clear: right;
     }
 
-    /* All Smartphones in portrait and landscape ----------- */
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px) {
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      clear: right;
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
       clear: right;
     }
 
@@ -182,18 +190,30 @@ img {
   form.navbar-right {
     width: 50%;
 
-    /* iPhone 5 in portrait & landscape */
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 568px) {
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
       margin: 0 5%;
       width: 90%;
     }
 
-    /* All Smartphones in portrait and landscape ----------- */
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px) {
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      margin: 0 5%;
+      width: 90%;
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
       margin: 0 5%;
       width: 90%;
     }
